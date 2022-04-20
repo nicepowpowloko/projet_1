@@ -1,4 +1,10 @@
-
+$ColorBlue:rgb(170,226,255);
+$ColorBlueFonce:rgb(89,119,162);
+$ColorGray:rgb(205,216,223);
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
 .grille {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
