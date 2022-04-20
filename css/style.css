@@ -4,6 +4,7 @@
           box-sizing: border-box;
 }
 
+/** Page port etaples **/
 .grille {
   display: -ms-grid;
   display: grid;

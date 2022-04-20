@@ -5,6 +5,7 @@ $colorGray:rgb(205,216,223);
     margin: 0;
     box-sizing: border-box;
 }
+/** Page port etaples **/
 .grille {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
