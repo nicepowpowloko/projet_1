@@ -165,15 +165,7 @@
 #suivant {
   cursor: pointer;
   position: absolute;
-  font-size: 100px;
-  color: rgba(220, 220, 220, 0.8);
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 1px;
-}
-
-#precedent,
-#suivant img {
-  color: red;
+  padding: 5px;
 }
 
 #precedent {

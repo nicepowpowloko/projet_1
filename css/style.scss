@@ -15,8 +15,6 @@ $colorBlueMarine:#00245b;
     grid-row-gap: 0px;
     background: $colorBlue;
     background: linear-gradient(49deg, $colorBlue 16%, $colorBlueFonce 38%, $colorGray 52%, $colorBlueMarine 100%);
-
-
     }
     .grille1 { grid-area: 1 / 1 / 2 / 2; align-items: center; justify-content: start; display: flex;}
     #logoimg{
@@ -52,6 +50,7 @@ text-transform: none;
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
+    
         }
         
         .photodiv1 { grid-area: 1 / 1 / 2 / 2;  background: linear-gradient(217deg, $colorBlue, $colorBlueMarine 60.71%),
@@ -66,9 +65,12 @@ text-transform: none;
             display: flex;
             justify-content: center;
             align-items: center;
+    
+           
           }
          #slider img{
             height: 60vh;
+          
             width: 40vw;
             border: $colorBlueMarine ridge 2px;
             -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, -5px 33px 47px 50px rgba(69,182,255,0); 
@@ -77,22 +79,18 @@ text-transform: none;
           
           #precedent,
           #suivant {
+         
             cursor: pointer;
-           
             position: absolute;
-            font-size: 100px;
-            color: rgba(220, 220, 220, 0.8);
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 1px;
-          }
-          #precedent,
-          #suivant img{
-            color: red;
+          
            
+            padding: 5px;
           }
+         
           
           #precedent {
             left: 0;
+           
           }
           
           #suivant {
@@ -103,6 +101,7 @@ text-transform: none;
           #slider:hover #suivant {
             opacity: 1;
           }
+
           @media screen and (max-width: 871px) {
               .grille {
                   display: block;
