@@ -1,0 +1,14 @@
+
+.grille {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    .grille1 { grid-area: 1 / 1 / 2 / 2; border: 1px black ridge;}
+    .grille2 { grid-area: 1 / 2 / 2 / 3; border: 1px black ridge;}
+    .grille3 { grid-area: 1 / 3 / 2 / 4; border: 1px black ridge;}
+    .grille4 { grid-area: 2 / 1 / 3 / 2; border: 1px black ridge;}
+    .grille5 { grid-area: 2 / 2 / 3 / 3;border: 1px black ridge;}
+    .grille6 { grid-area: 2 / 3 / 3 / 4; border: 1px black ridge;}
