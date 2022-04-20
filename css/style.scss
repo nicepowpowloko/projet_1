@@ -1,6 +1,7 @@
 $colorBlue:rgb(170,226,255);
 $colorBlueFonce:rgb(89,119,162);
 $colorGray:rgb(205,216,223);
+$colorBlueMarine:#00245b;
 *{
     margin: 0;
     box-sizing: border-box;
@@ -12,10 +13,101 @@ $colorGray:rgb(205,216,223);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    background: $colorBlue;
+    background: linear-gradient(49deg, $colorBlue 16%, $colorBlueFonce 38%, $colorGray 52%, $colorBlueMarine 100%);
+
+
     }
-    .grille1 { grid-area: 1 / 1 / 2 / 2; border: 1px black ridge;}
-    .grille2 { grid-area: 1 / 2 / 2 / 3; border: 1px black ridge;}
-    .grille3 { grid-area: 1 / 3 / 2 / 4; border: 1px black ridge;}
-    .grille4 { grid-area: 2 / 1 / 3 / 2; border: 1px black ridge;}
-    .grille5 { grid-area: 2 / 2 / 3 / 3;border: 1px black ridge;}
-    .grille6 { grid-area: 2 / 3 / 3 / 4; border: 1px black ridge;}
+    .grille1 { grid-area: 1 / 1 / 2 / 2; align-items: center; justify-content: start; display: flex;}
+    #logoimg{
+        height: 18vh;
+        width: 10vw;
+      
+    }
+    .grille2 { grid-area: 1 / 2 / 2 / 3;  align-items: center; justify-content: center; display: flex; border-radius:  10% 10% 0 0;}
+    .grille2 h1{
+        color: $colorBlueFonce;
+
+text-shadow: 1px 1px 2px $colorBlueMarine;
+font-family: Georgia, serif;
+font-size: 3em;
+letter-spacing: 1.4px;
+word-spacing: 0.8px;
+color: $colorBlue;
+font-weight: 700;
+text-decoration: none solid $colorGray;
+font-style: italic;
+font-variant: small-caps;
+text-transform: none;
+    }
+    .grille3 { grid-area: 1 / 3 / 2 / 4; }
+    .grille4 { grid-area: 2 / 1 / 3 / 2; -webkit-box-shadow: -4px -10px 4px 1px $colorBlueFonce; 
+        box-shadow: -4px -10px 4px 1px $colorBlueFonce; border-top:$colorBlue ridge 1px ;}
+    .grille5 { grid-area: 2 / 2 / 3 / 3;}
+    .grille6 { grid-area: 2 / 3 / 3 / 4; }
+
+    .photoslide {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+        .photodiv1 { grid-area: 1 / 1 / 2 / 2;  background: linear-gradient(217deg, $colorBlue, $colorBlueMarine 60.71%),
+            linear-gradient(127deg, $colorBlueFonce, $colorBlueFonce 70.71%),
+            linear-gradient(336deg, $colorBlueMarine, $colorGray 70.71%);}
+        .photodiv2 { grid-area: 2 / 1 / 3 / 2; }
+        #slider {
+            position: relative;
+            background: $colorBlue;
+            background: linear-gradient(49deg, $colorBlue 16%, $colorBlueFonce 38%, $colorGray 52%, $colorBlueMarine 100%);
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+         #slider img{
+            height: 60vh;
+            width: 40vw;
+            border: $colorBlueMarine ridge 2px;
+            -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, -5px 33px 47px 50px rgba(69,182,255,0); 
+            box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, -5px 33px 47px 50px rgba(69,182,255,0);
+          }
+          
+          #precedent,
+          #suivant {
+            cursor: pointer;
+           
+            position: absolute;
+            font-size: 100px;
+            color: rgba(220, 220, 220, 0.8);
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 1px;
+          }
+          #precedent,
+          #suivant img{
+            color: red;
+           
+          }
+          
+          #precedent {
+            left: 0;
+          }
+          
+          #suivant {
+            right: 0;
+          }
+          
+          #slider:hover #precedent,
+          #slider:hover #suivant {
+            opacity: 1;
+          }
+          @media screen and (max-width: 871px) {
+              .grille {
+                  display: block;
+                 
+                  justify-content: center;
+                  align-items: center;
+              }
+          }
