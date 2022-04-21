@@ -537,7 +537,7 @@
 }
 .home .slide .container .caption h1 {
   font-size: 45px;
-  color: #ffffff;
+  color: #f5f7fa;
   margin: 0;
 }
 .home .slide .container .caption p {
@@ -548,9 +548,11 @@
 .home .slide .container .caption a {
   display: inline-block;
   padding: 10px 30px;
-  background-color: #000000;
+  background-color: rgb(170, 226, 255);
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
+  border: 3px solid #00245b;
+  border-radius: 20px;
 }
 .home .controls .prev,
 .home .controls .next {
@@ -562,7 +564,7 @@
   width: 50px;
   margin-top: -20px;
   color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #00245b;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -586,8 +588,8 @@
   line-height: 25px;
   margin: 0 2px;
   height: 25px;
-  color: #ffffff;
-  background-color: sandybrown;
+  color: #a89d9d;
+  background-color: rgb(170, 226, 255);
   border-radius: 50%;
   cursor: pointer;
 }
@@ -621,7 +623,7 @@
 }
 
 .home .indicator div.active {
-  background-color: #000;
+  background-color: #00245b;
 }
 
 @-webkit-keyframes captionText {
