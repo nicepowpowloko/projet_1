@@ -507,4 +507,161 @@
     transform: translate(310px, 50px);
   }
 }
-/** FIN page ville etaples début poge foret**//*# sourceMappingURL=style.css.map */
+/** FIN page ville etaples début poge foret**/
+/* DÉBUT PAGE D'ACCEUILL */
+.home {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.home .slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+  display: none;
+  -webkit-animation: slide 2s ease-in-out;
+          animation: slide 2s ease-in-out;
+}
+.home .slide .container {
+  max-width: 1170px;
+  margin: auto;
+  flex-grow: 1;
+}
+.home .slide .container .caption {
+  width: 50%;
+}
+.home .slide .container .caption h1 {
+  font-size: 45px;
+  color: #ffffff;
+  margin: 0;
+}
+.home .slide .container .caption p {
+  font-size: 16px;
+  color: #ffffff;
+  margin: 2rem 0;
+}
+.home .slide .container .caption a {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #000000;
+  text-decoration: none;
+  color: #ffffff;
+}
+.home .controls .prev,
+.home .controls .next {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  display: flex;
+  height: 50px;
+  width: 50px;
+  margin-top: -20px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.home .controls .prev {
+  left: 0;
+}
+.home .controls .next {
+  right: 0;
+}
+.home .indicator {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  z-index: 2;
+}
+.home .indicator > div {
+  display: inline-block;
+  text-align: center;
+  width: 25px;
+  line-height: 25px;
+  margin: 0 2px;
+  height: 25px;
+  color: #ffffff;
+  background-color: sandybrown;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.home .slide.active {
+  display: flex;
+}
+
+.home .slide.active .caption h1 {
+  opacity: 0;
+  -webkit-animation: captionText 0.5s ease forwards;
+          animation: captionText 0.5s ease forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.home .slide.active .caption p {
+  opacity: 0;
+  -webkit-animation: captionText 0.5s ease forwards;
+          animation: captionText 0.5s ease forwards;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.home .slide.active .caption a {
+  opacity: 0;
+  -webkit-animation: captionText 0.5s ease forwards;
+          animation: captionText 0.5s ease forwards;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.home .indicator div.active {
+  background-color: #000;
+}
+
+@-webkit-keyframes captionText {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes captionText {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=style.css.map */
