@@ -1,48 +1,23 @@
-$ = function(id) {
-    return document.getElementById(id);
-  }
-  
- let show = function(id) {
-      $(id).style.display ='block';
-  }
- let hide = function(id) {
-      $(id).style.display ='none';
-  }
-  
-  let slide = new Array("../html/img/port1.jpg", "../html/img/port2.jpg", "../html/img/port3.jpg", "../html/img/port4.jpg","../html/img/port5.jpg","../html/img/port6.jpg","../html/img/port7.jpg","../html/img/port8.jpg","../html/img/port9.jpg","../html/img/port10.jpg");
- 
-let numero = 0;
-
-function ChangeSlide(sens) {
-    numero = numero + sens;
-    if (numero < 0)
-        numero = slide.length - 1;
-    if (numero > slide.length - 1)
-        numero = 0;
-    document.getElementById("slide").src = slide[numero];
-}
-
-
 const text1_options = [
-    "Photo d'une jolie voiture",
-    "Thomas près d'un mur",
-    "Encore une rue",
-    "Thomas prend une photo",
-    "Boulangerie", "Pour acheter à mangé",
-    "Mairie ", "Pour acheter à boire",
-    "Rue de Dylan", "Office du tourisme", "Des trucs",
+    "Photo d'une jolie foret",
+    "Thomas dans la foret",
+    "Encore une foret",
+    "Thomas prend une photo dans la forert",
+    "foret", "balade dans la foret",
+    "je me balade dans une foret", "des arbres",
+    "des arbres dans la foret", "youhou une foret", "arbuste dans la foret",
   ];
   const text2_options = [
-    "69 rue de rosa",
-    "Youuuuu ",
-    "Avec un passage piéton",
-    "Et moi aussi", "Thomas prend une photo", "Pour acheter à mangé", "Oui la mairie d'Etaples",
-    "Pour acheter à boire", "Carrefour market", "Oui oui il y a une office", "lorem impsum avadakedabraaaa",
+    "69 rue de la foret",
+    "Youuuuu une foret ",
+    "Avec un passage piéton dans une foret",
+    "Et moi aussi je suis dans une foret", "Thomas prend une photo dans une foret", "Pour acheter à mangé dans une foret", "une foret youpi",
+    "Pour acheter à boire dans une foret", "Carrefour market dans une foret", "Oui oui il y a une office dans une foret", "lorem impsum avadakedabraaaa boum",
   ];
   const color_options = ["#00245b", "rgb(170,226,255)", "rgb(89,119,162)", "rgb(205,216,223)", "#00245b","rgb(89,119,162)", "rgb(170,226,255)", "rgb(89,119,162)", "rgb(205,216,223)", "#00245b","rgb(89,119,162)"];
   const image_options = [
-    "../html/img/villle/ville1.jpg", "../html/img/villle/ville2.jpg", "../html/img/villle/ville3.jpg", "../html/img/villle/ville4.jpg", "../html/img/villle/ville5.jpg", "../html/img/villle/ville6.jpg", "../html/img/villle/ville7.jpg", "../html/img/villle/ville8.jpg", "../html/img/villle/ville9.jpg", "../html/img/villle/ville10.jpg", "../html/img/villle/ville11.jpg",
-    "../html/img/villle/ville12.jpg",
+    "../html/img/foret/foret1.jpg", "../html/img/foret/foret2.jpg", "../html/img/foret/foret3.jpg", "../html/img/foret/foret4.jpg", "../html/img/foret/foret5.jpg", "../html/img/foret/foret6.jpg", "../html/img/foret/foret7.jpg", "../html/img/foret/foret8.jpg", "../html/img/foret/foret9.jpg", "../html/img/foret/foret10.jpg", "../html/img/foret/foret11.jpg",
+    "../html/img/foret/foret12.jpg",
   ];
   var i = 0;
   const currentOptionText1 = document.getElementById("current-option-text1");
@@ -101,4 +76,3 @@ const text1_options = [
       carousel.classList.remove("anim-previous");
     }, 650);
   };
-  
